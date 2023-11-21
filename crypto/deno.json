@@ -1,4 +1,4 @@
 {
-  "name": "crypto",
+  "name": "@std/crypto",
   "version": "1.0.0"
 }

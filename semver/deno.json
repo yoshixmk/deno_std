@@ -1,4 +1,4 @@
 {
-  "name": "semver",
+  "name": "@std/semver",
   "version": "1.0.0"
 }

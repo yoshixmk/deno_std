@@ -1,4 +1,4 @@
 {
-  "name": "msgpack",
+  "name": "@std/msgpack",
   "version": "1.0.0"
 }

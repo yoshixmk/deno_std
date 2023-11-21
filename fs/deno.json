@@ -1,4 +1,4 @@
 {
-  "name": "fs",
+  "name": "@std/fs",
   "version": "1.0.0"
 }

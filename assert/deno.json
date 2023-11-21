@@ -1,4 +1,4 @@
 {
-  "name": "assert",
+  "name": "@std/assert",
   "version": "1.0.0"
 }
