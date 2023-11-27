@@ -12,8 +12,8 @@ import type { Reader } from "@std/io/types";
  *
  * @example
  * ```ts
- * import { copy } from "https://deno.land/std@$STD_VERSION/streams/copy.ts";
- * import { readerFromStreamReader } from "https://deno.land/std@$STD_VERSION/streams/reader_from_stream_reader.ts";
+ * import { copy } from "@std/streams/copy";
+ * import { readerFromStreamReader } from "@std/streams/reader_from_stream_reader";
  *
  * const res = await fetch("https://deno.land");
  * const file = await Deno.open("./deno.land.html", { create: true, write: true });

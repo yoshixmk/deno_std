@@ -51,7 +51,7 @@ class Queue<T> {
  *
  * @example
  * ```ts
- * import { tee } from "https://deno.land/std@$STD_VERSION/async/tee.ts";
+ * import { tee } from "@std/async/tee";
  *
  * const gen = async function* gen() {
  *   yield 1;

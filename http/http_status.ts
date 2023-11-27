@@ -13,7 +13,7 @@
  * import {
  *   Status,
  *   STATUS_TEXT,
- * } from "https://deno.land/std@$STD_VERSION/http/http_status.ts";
+ * } from "@std/http/http_status";
  *
  * console.log(Status.NotFound); //=> 404
  * console.log(STATUS_TEXT[Status.NotFound]); //=> "Not Found"
@@ -21,7 +21,7 @@
  *
  * @example
  * ```ts
- * import { isErrorStatus } from "https://deno.land/std@$STD_VERSION/http/http_status.ts";
+ * import { isErrorStatus } from "@std/http/http_status";
  *
  * const res = await fetch("https://example.com/");
  *

@@ -8,7 +8,7 @@
  *
  * ```ts
  * // example_test.ts
- * import { assertSnapshot } from "https://deno.land/std@$STD_VERSION/testing/snapshot.ts";
+ * import { assertSnapshot } from "@std/testing/snapshot";
  *
  * Deno.test("isSnapshotMatch", async function (t): Promise<void> {
  *   const a = {
@@ -66,7 +66,7 @@
  *
  * ```ts
  * // example_test.ts
- * import { assertSnapshot } from "https://deno.land/std@$STD_VERSION/testing/snapshot.ts";
+ * import { assertSnapshot } from "@std/testing/snapshot";
  *
  * Deno.test("isSnapshotMatch", async function (t): Promise<void> {
  *   const a = {
@@ -83,7 +83,7 @@
  *
  * ```ts
  * // example_test.ts
- * import { createAssertSnapshot } from "https://deno.land/std@$STD_VERSION/testing/snapshot.ts";
+ * import { createAssertSnapshot } from "@std/testing/snapshot";
  *
  * const assertSnapshot = createAssertSnapshot({
  *   // options
@@ -100,8 +100,8 @@
  *
  * ```ts
  * // example_test.ts
- * import { createAssertSnapshot } from "https://deno.land/std@$STD_VERSION/testing/snapshot.ts";
- * import { stripColor } from "https://deno.land/std@$STD_VERSION/fmt/colors.ts";
+ * import { createAssertSnapshot } from "@std/testing/snapshot";
+ * import { stripColor } from "@std/fmt/colors";
  *
  * const assertSnapshot = createAssertSnapshot({
  *   dir: ".snaps",
@@ -515,7 +515,7 @@ class AssertSnapshotContext {
  *
  * @example
  * ```ts
- * import { assertSnapshot } from "https://deno.land/std@$STD_VERSION/testing/snapshot.ts";
+ * import { assertSnapshot } from "@std/testing/snapshot";
  *
  * Deno.test("snapshot", async (test) => {
  *  await assertSnapshot<number>(test, 2);

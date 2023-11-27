@@ -1,0 +1,1 @@
+export { default } from "./named_entity_list.json" assert { type: "json" };

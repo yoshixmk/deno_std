@@ -48,7 +48,7 @@ const defaultRetryOptions: Required<RetryOptions> = {
  *
  * @example
  * ```typescript
- * import { retry } from "https://deno.land/std@$STD_VERSION/async/mod.ts";
+ * import { retry } from "@std/async";
  * const req = async () => {
  *  // some function that throws sometimes
  * };
@@ -65,7 +65,7 @@ const defaultRetryOptions: Required<RetryOptions> = {
  *
  * @example
  * ```typescript
- * import { retry } from "https://deno.land/std@$STD_VERSION/async/mod.ts";
+ * import { retry } from "@std/async";
  * const req = async () => {
  *  // some function that throws sometimes
  * };

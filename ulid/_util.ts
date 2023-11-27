@@ -62,8 +62,8 @@ export function incrementBase32(str: string): string {
  * Generates a monotonically increasing ULID.
  *
  * @example To generate monotonically increasing ULIDs, create a monotonic counter.
- * ```ts
- * import { monotonicFactory } from "https://deno.land/std@$STD_VERSION/ulid/_util.ts";
+ * ```ts,
+ * import { monotonicFactory } from "./_util.ts";
  *
  * const ulid = monotonicFactory();
  * // Strict ordering for the same timestamp, by incrementing the least-significant random bit by 1

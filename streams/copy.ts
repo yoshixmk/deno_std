@@ -12,7 +12,7 @@ import type { Reader, Writer } from "@std/io/types";
  * the first error encountered while copying.
  *
  * ```ts
- * import { copy } from "https://deno.land/std@$STD_VERSION/streams/copy.ts";
+ * import { copy } from "@std/streams/copy";
  *
  * const source = await Deno.open("my_file.txt");
  * const bytesCopied1 = await copy(source, Deno.stdout);

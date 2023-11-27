@@ -10,8 +10,8 @@ import { encodeBase64 } from "@std/encoding/base64";
  * Converts a hash to a string with a given encoding.
  * @example
  * ```ts
- * import { crypto } from "https://deno.land/std@$STD_VERSION/crypto/crypto.ts";
- * import { toHashString } from "https://deno.land/std@$STD_VERSION/crypto/to_hash_string.ts"
+ * import { crypto } from "@std/crypto/crypto";
+ * import { toHashString } from "@std/crypto/to_hash_string"
  *
  * const hash = await crypto.subtle.digest("SHA-384", new TextEncoder().encode("You hear that Mr. Anderson?"));
  *

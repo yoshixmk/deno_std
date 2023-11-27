@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "exports": {
     ".": "./mod.ts",
-    "./entities": "./entities.ts"
+    "./entities": "./entities.ts",
+    "./named_entity_list": "./named_entity_list.ts"
   }
 }

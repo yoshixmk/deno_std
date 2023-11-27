@@ -11,8 +11,8 @@ import type { Reader, ReaderSync } from "@std/io/types";
  * Uint8Array`.
  *
  * ```ts
- * import { Buffer } from "https://deno.land/std@$STD_VERSION/io/buffer.ts";
- * import { readAll } from "https://deno.land/std@$STD_VERSION/streams/read_all.ts";
+ * import { Buffer } from "@std/io/buffer";
+ * import { readAll } from "@std/streams/read_all";
  *
  * // Example from stdin
  * const stdinContent = await readAll(Deno.stdin);
@@ -42,8 +42,8 @@ export async function readAll(r: Reader): Promise<Uint8Array> {
  * as `Uint8Array`.
  *
  * ```ts
- * import { Buffer } from "https://deno.land/std@$STD_VERSION/io/buffer.ts";
- * import { readAllSync } from "https://deno.land/std@$STD_VERSION/streams/read_all.ts";
+ * import { Buffer } from "@std/io/buffer";
+ * import { readAllSync } from "@std/streams/read_all";
  *
  * // Example from stdin
  * const stdinContent = readAllSync(Deno.stdin);

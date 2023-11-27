@@ -11,7 +11,7 @@ import { toPathString } from "./_util.ts";
  *
  * @example
  * ```ts
- * import { emptyDir } from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+ * import { emptyDir } from "@std/fs";
  *
  * emptyDir("./foo"); // returns a promise
  * ```
@@ -45,7 +45,7 @@ export async function emptyDir(dir: string | URL) {
  *
  * @example
  * ```ts
- * import { emptyDirSync } from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+ * import { emptyDirSync } from "@std/fs";
  *
  * emptyDirSync("./foo"); // void
  * ```

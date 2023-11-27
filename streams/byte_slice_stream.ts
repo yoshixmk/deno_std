@@ -8,7 +8,7 @@ import { assert } from "@std/assert/assert";
  *
  * @example
  * ```ts
- * import { ByteSliceStream } from "https://deno.land/std@$STD_VERSION/streams/byte_slice_stream.ts";
+ * import { ByteSliceStream } from "@std/streams/byte_slice_stream";
  * const response = await fetch("https://example.com");
  * const rangedStream = response.body!
  *   .pipeThrough(new ByteSliceStream(3, 8));

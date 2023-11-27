@@ -70,7 +70,7 @@ function comparePath(a: WalkEntry, b: WalkEntry): number {
  *
  * @example
  * ```ts
- * import { expandGlob } from "https://deno.land/std@$STD_VERSION/fs/expand_glob.ts";
+ * import { expandGlob } from "@std/fs/expand_glob";
  * for await (const file of expandGlob("**\/*.ts")) {
  *   console.log(file);
  * }
@@ -196,7 +196,7 @@ export async function* expandGlob(
  *
  * @example
  * ```ts
- * import { expandGlobSync } from "https://deno.land/std@$STD_VERSION/fs/expand_glob.ts";
+ * import { expandGlobSync } from "@std/fs/expand_glob";
  * for (const file of expandGlobSync("**\/*.ts")) {
  *   console.log(file);
  * }

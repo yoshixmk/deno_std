@@ -11,7 +11,7 @@ import { red } from "@std/fmt/colors";
  *
  * @example
  * ```ts
- * import { assertStrictEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_strict_equals.ts";
+ * import { assertStrictEquals } from "@std/assert/assert_strict_equals";
  *
  * Deno.test("isStrictlyEqual", function (): void {
  *   const a = {};

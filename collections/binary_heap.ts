@@ -21,8 +21,8 @@ export {
    *   ascend,
    *   BinaryHeap,
    *   descend,
-   * } from "https://deno.land/std@$STD_VERSION/data_structures/mod.ts";
-   * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+   * } from "@std/data_structures";
+   * import { assertEquals } from "@std/assert/assert_equals";
    *
    * const maxHeap = new BinaryHeap<number>();
    * maxHeap.push(4, 1, 3, 5, 2);

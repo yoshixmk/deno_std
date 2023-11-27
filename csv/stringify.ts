@@ -236,7 +236,7 @@ function getValuesFromItem(
  * import {
  *   Column,
  *   stringify,
- * } from "https://deno.land/std@$STD_VERSION/csv/stringify.ts";
+ * } from "@std/csv/stringify";
  *
  * type Character = {
  *   age: number;

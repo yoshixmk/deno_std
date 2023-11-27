@@ -22,7 +22,7 @@
  * import {
  *   ServerSentEvent,
  *   ServerSentEventStreamTarget,
- * } from "https://deno.land/std@$STD_VERSION/http/unstable_server_sent_event.ts";
+ * } from "@std/http/unstable_server_sent_event";
  *
  * Deno.serve({ port: 8000 }, (request) => {
  *   const target = new ServerSentEventStreamTarget();
@@ -110,7 +110,7 @@ class CloseEvent extends Event {
  * import {
  *   ServerSentEvent,
  *   ServerSentEventStreamTarget,
- * } from "https://deno.land/std@$STD_VERSION/http/server_sent_event.ts";
+ * } from "@std/http/server_sent_event";
  *
  * Deno.serve({ port: 8000 }, (request) => {
  *   const target = new ServerSentEventStreamTarget();
@@ -200,7 +200,7 @@ export interface ServerSentEventTarget extends EventTarget {
    * connection is kept alive.
    *
    * ```ts
-   * import { ServerSentEventStreamTarget } from "https://deno.land/std@$STD_VERSION/http/server_sent_event.ts";
+   * import { ServerSentEventStreamTarget } from "@std/http/server_sent_event";
    *
    * Deno.serve({ port: 8000 }, (request) => {
    *   const target = new ServerSentEventStreamTarget();
@@ -227,7 +227,7 @@ export interface ServerSentEventTarget extends EventTarget {
    * import {
    *   ServerSentEvent,
    *   ServerSentEventStreamTarget,
-   * } from "https://deno.land/std@$STD_VERSION/http/server_sent_event.ts";
+   * } from "@std/http/server_sent_event";
    *
    * Deno.serve({ port: 8000 }, (request) => {
    *   const target = new ServerSentEventStreamTarget();
@@ -250,7 +250,7 @@ export interface ServerSentEventTarget extends EventTarget {
    * import {
    *   ServerSentEvent,
    *   ServerSentEventStreamTarget,
-   * } from "https://deno.land/std@$STD_VERSION/http/server_sent_event.ts";
+   * } from "@std/http/server_sent_event";
    *
    * Deno.serve({ port: 8000 }, (request) => {
    *   const target = new ServerSentEventStreamTarget();

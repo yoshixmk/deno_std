@@ -11,7 +11,7 @@
  *
  * @example
  * ```ts
- * import { parse } from "https://deno.land/std@$STD_VERSION/flags/mod.ts";
+ * import { parse } from "@std/flags";
  *
  * console.dir(parse(Deno.args));
  * ```
@@ -51,13 +51,13 @@ export {
    *
    * @example
    * ```ts
-   * import { parse } from "https://deno.land/std@$STD_VERSION/flags/mod.ts";
+   * import { parse } from "@std/flags";
    * const parsedArgs = parse(Deno.args);
    * ```
    *
    * @example
    * ```ts
-   * import { parse } from "https://deno.land/std@$STD_VERSION/flags/mod.ts";
+   * import { parse } from "@std/flags";
    * const parsedArgs = parse(["--foo", "--bar=baz", "./quux.txt"]);
    * // parsedArgs: { foo: true, bar: "baz", _: ["./quux.txt"] }
    * ```

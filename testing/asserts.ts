@@ -30,7 +30,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertAlmostEquals, assertThrows } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertAlmostEquals, assertThrows } from "@std/testing/asserts";
    *
    * assertAlmostEquals(0.1, 0.2);
    *
@@ -50,7 +50,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertArrayIncludes } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertArrayIncludes } from "@std/testing/asserts";
    *
    * assertArrayIncludes<number>([1, 2], [2])
    * ```
@@ -66,7 +66,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertEquals } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertEquals } from "@std/testing/asserts";
    *
    * Deno.test("example", function (): void {
    *   assertEquals("world", "world");
@@ -123,7 +123,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertNotEquals } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertNotEquals } from "@std/testing/asserts";
    *
    * assertNotEquals<number>(1, 2)
    * ```
@@ -150,7 +150,7 @@ export {
    * If the values are strictly equal then throw.
    *
    * ```ts
-   * import { assertNotStrictEquals } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertNotStrictEquals } from "@std/testing/asserts";
    *
    * assertNotStrictEquals(1, 1)
    * ```
@@ -172,7 +172,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertRejects } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertRejects } from "@std/testing/asserts";
    *
    * Deno.test("doesThrow", async function () {
    *   await assertRejects(async () => {
@@ -199,7 +199,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertRejects } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertRejects } from "@std/testing/asserts";
    *
    * Deno.test("doesThrow", async function () {
    *   await assertRejects(
@@ -233,7 +233,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertStrictEquals } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertStrictEquals } from "@std/testing/asserts";
    *
    * Deno.test("isStrictlyEqual", function (): void {
    *   const a = {};
@@ -266,7 +266,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertThrows } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertThrows } from "@std/testing/asserts";
    *
    * Deno.test("doesThrow", function (): void {
    *   assertThrows((): void => {
@@ -291,7 +291,7 @@ export {
    *
    * @example
    * ```ts
-   * import { assertThrows } from "https://deno.land/std@$STD_VERSION/testing/asserts.ts";
+   * import { assertThrows } from "@std/testing/asserts";
    *
    * Deno.test("doesThrow", function (): void {
    *   assertThrows((): void => {

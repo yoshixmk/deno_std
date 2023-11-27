@@ -14,7 +14,7 @@ import { validateBinaryLike } from "./_util.ts";
  * import {
  *   decodeBase64,
  *   encodeBase64,
- * } from "https://deno.land/std@$STD_VERSION/encoding/base64.ts";
+ * } from "@std/encoding/base64";
  *
  * const b64Repr = "Zm9vYg==";
  *

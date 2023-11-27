@@ -149,9 +149,9 @@ export interface TarDataWithSource extends TarData {
  *
  * @example
  * ```ts
- * import { Tar } from "https://deno.land/std@$STD_VERSION/archive/tar.ts";
- * import { Buffer } from "https://deno.land/std@$STD_VERSION/io/buffer.ts";
- * import { copy } from "https://deno.land/std@$STD_VERSION/streams/copy.ts";
+ * import { Tar } from "@std/archive/tar";
+ * import { Buffer } from "@std/io/buffer";
+ * import { copy } from "@std/streams/copy";
  *
  * const tar = new Tar();
  *

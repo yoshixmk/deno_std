@@ -15,8 +15,8 @@ import { assert } from "@std/assert/assert";
  * that time, `timingSafeEqual()` is provided:
  *
  * ```ts
- * import { timingSafeEqual } from "https://deno.land/std@$STD_VERSION/crypto/timing_safe_equal.ts";
- * import { assert } from "https://deno.land/std@$STD_VERSION/assert/assert.ts";
+ * import { timingSafeEqual } from "@std/crypto/timing_safe_equal";
+ * import { assert } from "@std/assert/assert";
  *
  * const a = await crypto.subtle.digest(
  *   "SHA-384",

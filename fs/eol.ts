@@ -12,7 +12,7 @@ export const CRLF = "\r\n" as const;
  *
  * @example
  * ```ts
- * import { EOL } from "https://deno.land/std@$STD_VERSION/fs/eol.ts";
+ * import { EOL } from "@std/fs/eol";
  *
  * EOL; // Returns "\n" on POSIX platforms or "\r\n" on Windows
  * ```
@@ -43,7 +43,7 @@ const regDetect = /(?:\r?\n)/g;
  *
  * @example
  * ```ts
- * import { detect, EOL } from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+ * import { detect, EOL } from "@std/fs";
  *
  * const CRLFinput = "deno\r\nis not\r\nnode";
  * const Mixedinput = "deno\nis not\r\nnode";
@@ -71,7 +71,7 @@ export function detect(content: string): EOL | null {
  *
  * @example
  * ```ts
- * import { EOL, format } from "https://deno.land/std@$STD_VERSION/fs/mod.ts";
+ * import { EOL, format } from "@std/fs";
  *
  * const CRLFinput = "deno\r\nis not\r\nnode";
  *

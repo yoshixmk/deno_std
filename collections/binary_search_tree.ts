@@ -27,8 +27,8 @@ export {
    *   ascend,
    *   descend,
    *   BinarySearchTree,
-   * } from "https://deno.land/std@$STD_VERSION/data_structures/mod.ts";
-   * import { assertEquals } from "https://deno.land/std@$STD_VERSION/assert/assert_equals.ts";
+   * } from "@std/data_structures";
+   * import { assertEquals } from "@std/assert/assert_equals";
    *
    * const values = [3, 10, 13, 4, 6, 7, 1, 14];
    * const tree = new BinarySearchTree<number>();
