@@ -6,9 +6,9 @@
  * @deprecated (will be removed after 1.0.0) Use the [Web Streams API]{@link https://developer.mozilla.org/en-US/docs/Web/API/Streams_API} instead.
  */
 
-import { assert } from "../assert/assert.ts";
-import { copy } from "../bytes/copy.ts";
-import type { Reader } from "../types.d.ts";
+import { assert } from "@std/assert/assert";
+import { copy } from "@std/bytes/copy";
+import type { Reader } from "./types.d.ts";
 
 const DEFAULT_BUF_SIZE = 4096;
 const MIN_BUF_SIZE = 16;

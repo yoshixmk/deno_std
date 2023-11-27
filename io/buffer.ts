@@ -1,9 +1,9 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { assert } from "../assert/assert.ts";
-import { copy } from "../bytes/copy.ts";
-import type { Reader, ReaderSync } from "../types.d.ts";
+import { assert } from "@std/assert/assert";
+import { copy } from "@std/bytes/copy";
+import type { Reader, ReaderSync } from "./types.d.ts";
 
 // MIN_READ is the minimum ArrayBuffer size passed to a read call by
 // buffer.ReadFrom. As long as the Buffer has at least MIN_READ bytes beyond

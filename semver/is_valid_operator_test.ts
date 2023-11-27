@@ -1,5 +1,5 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { assert } from "../assert/mod.ts";
+import { assert } from "@std/assert";
 import { isValidOperator } from "./_shared.ts";
 
 Deno.test({

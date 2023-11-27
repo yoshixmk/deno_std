@@ -1,5 +1,5 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { toTransformStream } from "../streams/to_transform_stream.ts";
+import { toTransformStream } from "@std/streams/to_transform_stream";
 import type { JsonValue, ParseStreamOptions } from "./common.ts";
 import { parse } from "./_common.ts";
 

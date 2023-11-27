@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { green, red, stripColor } from "../fmt/colors.ts";
-import { assertEquals, assertThrows } from "../assert/mod.ts";
+import { green, red, stripColor } from "@std/fmt/colors";
+import { assertEquals, assertThrows } from "@std/assert";
 import { format } from "./_format.ts";
 
 Deno.test("assert diff formatting (strings)", () => {

@@ -1,11 +1,11 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
 import { VERSION } from "../version.ts";
-import * as semver from "../semver/mod.ts";
-import * as colors from "../fmt/colors.ts";
+import * as semver from "@std/semver";
+import * as colors from "@std/fmt/colors";
 import { doc } from "deno_doc";
-import { walk } from "../fs/walk.ts";
-import { toFileUrl } from "../path/mod.ts";
+import { walk } from "@std/fs/walk";
+import { toFileUrl } from "@std/path";
 
 const EXTENSIONS = [".mjs", ".js", ".ts"];
 const EXCLUDED_PATHS = [

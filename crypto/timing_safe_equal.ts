@@ -1,7 +1,7 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 /**
  * When checking the values of cryptographic hashes are equal, default

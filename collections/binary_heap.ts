@@ -47,7 +47,7 @@ export {
    * ```
    */
   BinaryHeap,
-} from "../data_structures/binary_heap.ts";
+} from "@std/data_structures/binary_heap";
 
 export {
   /**
@@ -62,4 +62,4 @@ export {
    * Compares its two arguments for descending order using JavaScript's built in comparison operators.
    */
   descend,
-} from "../data_structures/comparators.ts";
+} from "@std/data_structures/comparators";

@@ -30,16 +30,16 @@
 
 import {
   FileTypes,
+  HEADER_LENGTH,
   type TarInfo,
   type TarMeta,
   type TarOptions,
   ustarStructure,
 } from "./_common.ts";
-import type { Reader } from "../types.d.ts";
-import { MultiReader } from "../io/multi_reader.ts";
-import { Buffer } from "../io/buffer.ts";
-import { assert } from "../assert/assert.ts";
-import { HEADER_LENGTH } from "./_common.ts";
+import type { Reader } from "@std/io/types";
+import { MultiReader } from "@std/io/multi_reader";
+import { Buffer } from "@std/io/buffer";
+import { assert } from "@std/assert/assert";
 
 export { type TarInfo, type TarMeta, type TarOptions };
 

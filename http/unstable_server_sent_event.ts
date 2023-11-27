@@ -45,7 +45,7 @@
  * @module
  */
 
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 const encoder = new TextEncoder();
 

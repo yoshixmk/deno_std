@@ -1,7 +1,7 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { extname as posixExtname } from "../path/posix/extname.ts";
+import { extname as posixExtname } from "@std/path/posix/extname";
 import { strip } from "./_strip.ts";
 
 /**

@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import * as path from "../path/mod.ts";
-import { basename, normalize } from "../path/mod.ts";
+import * as path from "@std/path";
+import { basename, normalize } from "@std/path";
 
 /**
  * Test whether `src` and `dest` resolve to the same location

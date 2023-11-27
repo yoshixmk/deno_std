@@ -1,9 +1,9 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { assertEquals } from "../assert/mod.ts";
+import { assertEquals } from "@std/assert";
 import { LimitedReader } from "./limited_reader.ts";
 import { StringWriter } from "./string_writer.ts";
-import { copy } from "../streams/copy.ts";
-import { readAll } from "../streams/read_all.ts";
+import { copy } from "@std/streams/copy";
+import { readAll } from "@std/streams/read_all";
 import { StringReader } from "./string_reader.ts";
 
 Deno.test("ioLimitedReader", async function () {

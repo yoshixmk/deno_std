@@ -1,5 +1,5 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { assertEquals, assertRejects, assertThrows } from "../assert/mod.ts";
+import { assertEquals, assertRejects, assertThrows } from "@std/assert";
 import { deferred } from "./deferred.ts";
 
 Deno.test("[async] deferred: resolve", async function () {

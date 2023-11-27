@@ -1,8 +1,8 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 import { crypto, type DigestAlgorithm } from "./mod.ts";
 import { toHashString } from "./to_hash_string.ts";
-import { repeat } from "../bytes/repeat.ts";
-import { assertEquals } from "../assert/mod.ts";
+import { repeat } from "@std/bytes/repeat";
+import { assertEquals } from "@std/assert";
 
 const encoder = new TextEncoder();
 

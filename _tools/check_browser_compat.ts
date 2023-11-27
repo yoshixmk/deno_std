@@ -6,7 +6,7 @@
  *
  * Run using: deno run --allow-read --allow-run _tools/check_browser_compat.ts
  */
-import { walkSync } from "../fs/walk.ts";
+import { walkSync } from "@std/fs/walk";
 
 const ROOT = new URL("../", import.meta.url);
 const SKIP = [/(test|bench|\/_|\\_|testdata|version.ts)/];

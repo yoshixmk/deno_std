@@ -259,7 +259,7 @@ import {
   RotatingFileHandler,
   WriterHandler,
 } from "./handlers.ts";
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 import type { LevelName } from "./levels.ts";
 
 export { LogLevels } from "./levels.ts";

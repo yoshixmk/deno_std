@@ -3,7 +3,7 @@ import {
   assertEquals,
   assertStrictEquals,
   assertThrows,
-} from "../../assert/mod.ts";
+} from "@std/assert";
 import { describe, it } from "../bdd.ts";
 import { User } from "./user.ts";
 

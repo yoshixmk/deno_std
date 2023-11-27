@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 import { levenshteinDistance } from "./levenshtein_distance.ts";
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 // NOTE: this metric may change in future versions (e.g. better than levenshteinDistance)
 const getWordDistance = levenshteinDistance;

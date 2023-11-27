@@ -1,8 +1,8 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 import { retry, RetryError } from "./retry.ts";
 import { _exponentialBackoffWithJitter } from "./_util.ts";
-import { assertEquals, assertRejects } from "../assert/mod.ts";
-import { FakeTime } from "../testing/time.ts";
+import { assertEquals, assertRejects } from "@std/assert";
+import { FakeTime } from "@std/testing/time";
 
 function generateErroringFunction(errorsBeforeSucceeds: number) {
   let errorCount = 0;

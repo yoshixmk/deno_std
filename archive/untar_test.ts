@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { assert, assertEquals, assertExists } from "../assert/mod.ts";
-import { resolve } from "../path/mod.ts";
+import { assert, assertEquals, assertExists } from "@std/assert";
+import { resolve } from "@std/path";
 import { Tar, type TarMeta } from "./tar.ts";
 import {
   TarEntry,
@@ -8,9 +8,9 @@ import {
   TarMetaWithLinkName,
   Untar,
 } from "./untar.ts";
-import { Buffer } from "../io/buffer.ts";
-import { copy } from "../streams/copy.ts";
-import { readAll } from "../streams/read_all.ts";
+import { Buffer } from "@std/io/buffer";
+import { copy } from "@std/streams/copy";
+import { readAll } from "@std/streams/read_all";
 import { filePath, testdataDir } from "./_test_common.ts";
 
 interface TestEntry {

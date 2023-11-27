@@ -1,7 +1,7 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
-import { assert, assertEquals, assertThrows } from "../assert/mod.ts";
-import { dirname, fromFileUrl, join, resolve } from "../path/mod.ts";
+import { assert, assertEquals, assertThrows } from "@std/assert";
+import { dirname, fromFileUrl, join, resolve } from "@std/path";
 import { Format } from "./_formats.ts";
 
 const moduleDir = dirname(fromFileUrl(import.meta.url));

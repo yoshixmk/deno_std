@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 import { indexOfNeedle } from "./index_of_needle.ts";
-import { assertEquals } from "../assert/mod.ts";
+import { assertEquals } from "@std/assert";
 
 Deno.test("[bytes] indexOfNeedle1", () => {
   const i = indexOfNeedle(

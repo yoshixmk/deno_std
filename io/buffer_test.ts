@@ -8,9 +8,9 @@ import {
   assertEquals,
   assertRejects,
   assertThrows,
-} from "../assert/mod.ts";
+} from "@std/assert";
 import { Buffer } from "./buffer.ts";
-import { writeAllSync } from "../streams/write_all.ts";
+import { writeAllSync } from "@std/streams/write_all";
 
 const MAX_SIZE = 2 ** 32 - 2;
 // N controls how many iterations of certain checks are performed.

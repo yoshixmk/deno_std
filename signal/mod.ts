@@ -6,7 +6,7 @@
  * @deprecated (will be removed in 1.0.0) Use the [Deno Signals API]{@link https://docs.deno.com/runtime/tutorials/os_signals} directly instead.
  */
 
-import { MuxAsyncIterator } from "../async/mux_async_iterator.ts";
+import { MuxAsyncIterator } from "@std/async/mux_async_iterator";
 
 export type Disposable = { dispose: () => void };
 

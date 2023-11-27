@@ -1,8 +1,8 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { encodeHex } from "../encoding/hex.ts";
-import { encodeBase64 } from "../encoding/base64.ts";
+import { encodeHex } from "@std/encoding/hex";
+import { encodeBase64 } from "@std/encoding/base64";
 
 /**
  * @deprecated (will be removed after 0.209.0) Use {@linkcode encodeHex} or {@linkcode encodeBase64} instead.

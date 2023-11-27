@@ -3,7 +3,7 @@ import {
   assertEquals,
   assertStrictEquals,
   assertThrows,
-} from "../../assert/mod.ts";
+} from "@std/assert";
 import { User } from "./user.ts";
 
 Deno.test("User.users initially empty", () => {

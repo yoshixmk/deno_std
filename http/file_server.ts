@@ -31,14 +31,14 @@
  * @module
  */
 
-import { join as posixJoin } from "../path/posix/join.ts";
-import { normalize as posixNormalize } from "../path/posix/normalize.ts";
-import { extname } from "../path/extname.ts";
-import { join } from "../path/join.ts";
-import { relative } from "../path/relative.ts";
-import { resolve } from "../path/resolve.ts";
-import { SEP_PATTERN } from "../path/separator.ts";
-import { contentType } from "../media_types/content_type.ts";
+import { join as posixJoin } from "@std/path/posix/join";
+import { normalize as posixNormalize } from "@std/path/posix/normalize";
+import { extname } from "@std/path/extname";
+import { join } from "@std/path/join";
+import { relative } from "@std/path/relative";
+import { resolve } from "@std/path/resolve";
+import { SEP_PATTERN } from "@std/path/separator";
+import { contentType } from "@std/media_types/content_type";
 import { calculate, ifNoneMatch } from "./etag.ts";
 import {
   isRedirectStatus,
@@ -46,11 +46,11 @@ import {
   STATUS_TEXT,
   type StatusCode,
 } from "./status.ts";
-import { ByteSliceStream } from "../streams/byte_slice_stream.ts";
-import { parseArgs } from "../cli/parse_args.ts";
-import { red } from "../fmt/colors.ts";
+import { ByteSliceStream } from "@std/streams/byte_slice_stream";
+import { parseArgs } from "@std/cli/parse_args";
+import { red } from "@std/fmt/colors";
 import { VERSION } from "../version.ts";
-import { format as formatBytes } from "../fmt/bytes.ts";
+import { format as formatBytes } from "@std/fmt/bytes";
 
 interface EntryInfo {
   mode: string;

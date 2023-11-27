@@ -1,9 +1,9 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 // This module is browser compatible.
 
-import { Buffer } from "../io/buffer.ts";
+import { Buffer } from "@std/io/buffer";
 import { writeAll } from "./write_all.ts";
-import type { Reader } from "../types.d.ts";
+import type { Reader } from "@std/io/types";
 
 /**
  * @deprecated (will be removed after 1.0.0) Use {@linkcode ReadableStreamDefaultReader} directly.

@@ -5,7 +5,8 @@
     "noImplicitOverride": true
   },
   "imports": {
-    "https://deno.land/std@$STD_VERSION/": "./",
+    "https://deno.land/std@$STD_VERSION/": "jsr:/@std/",
+    "@std/": "jsr:/@std/",
     "deno_graph": "https://deno.land/x/deno_graph@0.60.0/mod.ts",
     "deno_doc": "https://deno.land/x/deno_doc@0.73.0/mod.ts",
     "npm:/typescript": "npm:typescript@5.2.2",

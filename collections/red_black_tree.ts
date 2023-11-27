@@ -87,7 +87,7 @@ export {
    * ```
    */
   RedBlackTree,
-} from "../data_structures/red_black_tree.ts";
+} from "@std/data_structures/red_black_tree";
 
 export {
   /**
@@ -102,4 +102,4 @@ export {
    * Compares its two arguments for descending order using JavaScript's built in comparison operators.
    */
   descend,
-} from "../data_structures/comparators.ts";
+} from "@std/data_structures/comparators";

@@ -16,7 +16,7 @@
  *
  * @module
  */
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 /** Combines recursively all intersection types and returns a new single type. */
 type Id<TRecord> = TRecord extends Record<string, unknown>

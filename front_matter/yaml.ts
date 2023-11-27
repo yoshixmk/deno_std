@@ -3,7 +3,7 @@
 import { createExtractor, Parser } from "./create_extractor.ts";
 import { Format } from "./_formats.ts";
 import { test as _test } from "./test.ts";
-import { parse } from "../yaml/parse.ts";
+import { parse } from "@std/yaml/parse";
 
 export { Format } from "./_formats.ts";
 

@@ -6,9 +6,9 @@
  * @module
  */
 
-import { RedBlackTree } from "../data_structures/red_black_tree.ts";
-import { ascend } from "../data_structures/comparators.ts";
-import type { DelayOptions } from "../async/delay.ts";
+import { RedBlackTree } from "@std/data_structures/red_black_tree";
+import { ascend } from "@std/data_structures/comparators";
+import type { DelayOptions } from "@std/async/delay";
 import { _internals } from "./_time.ts";
 
 /** An error related to faking time. */

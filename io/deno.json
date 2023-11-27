@@ -18,6 +18,7 @@
     "./read_string_delim": "./read_string_delim.ts",
     "./slice_long_to_bytes": "./slice_long_to_bytes.ts",
     "./string_reader": "./string_reader.ts",
-    "./string_writer": "./string_writer.ts"
+    "./string_writer": "./string_writer.ts",
+    "./types": "./types.d.ts"
   }
 }

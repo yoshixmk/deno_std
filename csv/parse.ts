@@ -11,7 +11,7 @@ import {
   type ParseResult,
   type ReadOptions,
 } from "./_io.ts";
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 export { ParseError, ReadOptions };
 

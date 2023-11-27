@@ -1,10 +1,10 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { GlobOptions, globToRegExp, isGlob, joinGlobs } from "../path/glob.ts";
-import { isAbsolute } from "../path/is_absolute.ts";
-import { resolve } from "../path/resolve.ts";
-import { SEP_PATTERN } from "../path/separator.ts";
+import { GlobOptions, globToRegExp, isGlob, joinGlobs } from "@std/path/glob";
+import { isAbsolute } from "@std/path/is_absolute";
+import { resolve } from "@std/path/resolve";
+import { SEP_PATTERN } from "@std/path/separator";
 import { walk, walkSync } from "./walk.ts";
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 import {
   createWalkEntry,
   createWalkEntrySync,
@@ -65,7 +65,7 @@ function comparePath(a: WalkEntry, b: WalkEntry): number {
  * Expand the glob string from the specified `root` directory and yield each
  * result as a `WalkEntry` object.
  *
- * See [`globToRegExp()`](../path/glob.ts#globToRegExp) for details on supported
+ * See [`globToRegExp()`](@std/path/glob#globToRegExp) for details on supported
  * syntax.
  *
  * @example

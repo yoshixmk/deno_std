@@ -9,7 +9,7 @@
  */
 
 import { timingSafeEqual } from "./timing_safe_equal.ts";
-import * as base64url from "../encoding/base64url.ts";
+import * as base64url from "@std/encoding/base64url";
 
 /** Types of data that can be signed cryptographically. */
 export type Data = string | number[] | ArrayBuffer | Uint8Array;

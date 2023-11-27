@@ -2,7 +2,7 @@
 // Run this test with `deno test --unstable -A compare_with_rust.ts`
 
 import { unicodeWidth } from "../unicode_width.ts";
-import { fromFileUrl } from "../../path/mod.ts";
+import { fromFileUrl } from "@std/path";
 import fc from "https://esm.sh/fast-check@3.8.0";
 
 // Note: This test is optional. It requires the Rust code to be compiled locally

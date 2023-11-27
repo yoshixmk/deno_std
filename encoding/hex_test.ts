@@ -4,7 +4,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { assertEquals, assertThrows } from "../assert/mod.ts";
+import { assertEquals, assertThrows } from "@std/assert";
 
 import { decode, decodeHex, encode, encodeHex } from "./hex.ts";
 

@@ -3,7 +3,7 @@
 // https://github.com/golang/go/blob/master/src/net/http/cookie.go
 // This module is browser compatible.
 
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
 export interface Cookie {
   /** Name of the cookie. */

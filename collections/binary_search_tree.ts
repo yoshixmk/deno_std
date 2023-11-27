@@ -86,4 +86,4 @@ export {
    * ```
    */
   BinarySearchTree,
-} from "../data_structures/binary_search_tree.ts";
+} from "@std/data_structures/binary_search_tree";

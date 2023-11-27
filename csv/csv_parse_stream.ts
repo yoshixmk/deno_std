@@ -8,8 +8,8 @@ import {
   parseRecord,
   type ParseResult,
   type ReadOptions,
-} from "../csv/_io.ts";
-import { TextDelimiterStream } from "../streams/text_delimiter_stream.ts";
+} from "./_io.ts";
+import { TextDelimiterStream } from "@std/streams/text_delimiter_stream";
 
 export interface CsvParseStreamOptions extends ReadOptions {
   /**

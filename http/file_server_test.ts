@@ -6,8 +6,8 @@ import {
   assertFalse,
   assertMatch,
   assertStringIncludes,
-} from "../assert/mod.ts";
-import { stub } from "../testing/mock.ts";
+} from "@std/assert";
+import { stub } from "@std/testing/mock";
 import { serveDir, ServeDirOptions, serveFile } from "./file_server.ts";
 import { calculate } from "./etag.ts";
 import {
@@ -17,9 +17,9 @@ import {
   join,
   resolve,
   toFileUrl,
-} from "../path/mod.ts";
+} from "@std/path";
 import { VERSION } from "../version.ts";
-import { MINUTE } from "../datetime/constants.ts";
+import { MINUTE } from "@std/datetime/constants";
 
 const moduleDir = dirname(fromFileUrl(import.meta.url));
 const testdataDir = resolve(moduleDir, "testdata");
@@ -735,8 +735,8 @@ Deno.test("serveFile() etag value falls back to DENO_DEPLOYMENT_ID if fileInfo.m
   // deno-fmt-ignore
   const code = `
     import { serveFile } from "${import.meta.resolve("./file_server.ts")}";
-    import { fromFileUrl } from "${import.meta.resolve("../path/mod.ts")}";
-    import { assertEquals } from "${import.meta.resolve("../assert/assert_equals.ts")}";
+    import { fromFileUrl } from "${import.meta.resolve("@std/path")}";
+    import { assertEquals } from "${import.meta.resolve("@std/assert/assert_equals")}";
     const testdataPath = "${toFileUrl(join(testdataDir, "test file.txt"))}";
     const fileInfo = await Deno.stat(new URL(testdataPath));
     fileInfo.mtime = null;

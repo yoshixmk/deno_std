@@ -1,8 +1,8 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
-import { copy as copyBytes } from "../bytes/copy.ts";
-import { assert } from "../assert/assert.ts";
-import type { Reader, ReaderSync } from "../types.d.ts";
+import { copy as copyBytes } from "@std/bytes/copy";
+import { assert } from "@std/assert/assert";
+import type { Reader, ReaderSync } from "./types.d.ts";
 
 const DEFAULT_BUFFER_SIZE = 32 * 1024;
 

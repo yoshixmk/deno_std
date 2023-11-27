@@ -10,10 +10,10 @@
  * @module
  */
 
-import { assert } from "../assert/assert.ts";
+import { assert } from "@std/assert/assert";
 
-import type { JsonValue } from "../json/common.ts";
-export type { JsonValue } from "../json/common.ts";
+import type { JsonValue } from "@std/json/common";
+export type { JsonValue } from "@std/json/common";
 
 export interface ParseOptions {
   /** Allow trailing commas at the end of arrays and objects.

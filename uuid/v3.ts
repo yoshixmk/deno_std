@@ -2,9 +2,9 @@
 // This module is browser compatible.
 
 import { bytesToUuid, uuidToBytes } from "./_common.ts";
-import { concat } from "../bytes/concat.ts";
-import { assert } from "../assert/assert.ts";
-import { crypto } from "../crypto/crypto.ts";
+import { concat } from "@std/bytes/concat";
+import { assert } from "@std/assert/assert";
+import { crypto } from "@std/crypto/crypto";
 
 const UUID_RE =
   /^[0-9a-f]{8}-[0-9a-f]{4}-[3][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;

@@ -5,7 +5,7 @@ import {
   assertRejects,
   assertStrictEquals,
   assertThrows,
-} from "../assert/mod.ts";
+} from "@std/assert";
 import {
   load,
   type LoadOptions,
@@ -14,8 +14,8 @@ import {
   parse,
   stringify,
 } from "./mod.ts";
-import * as path from "../path/mod.ts";
-import { assert } from "../assert/assert.ts";
+import * as path from "@std/path";
+import { assert } from "@std/assert/assert";
 
 const moduleDir = path.dirname(path.fromFileUrl(import.meta.url));
 const testdataDir = path.resolve(moduleDir, "testdata");

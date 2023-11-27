@@ -69,4 +69,4 @@ export {
    * The options for the `parse` call.
    */
   type ParseOptions,
-} from "../cli/parse_args.ts";
+} from "@std/cli/parse_args";

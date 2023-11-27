@@ -1,5 +1,5 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { dirname } from "../path/dirname.ts";
+import { dirname } from "@std/path/dirname";
 import { ensureDir, ensureDirSync } from "./ensure_dir.ts";
 import { getFileInfoType, toPathString } from "./_util.ts";
 

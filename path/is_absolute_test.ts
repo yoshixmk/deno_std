@@ -1,7 +1,7 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 // Copyright the Browserify authors. MIT License.
 // Ported from https://github.com/browserify/path-browserify/
-import { assertEquals } from "../assert/mod.ts";
+import { assertEquals } from "@std/assert";
 import * as path from "./mod.ts";
 
 Deno.test("posix.isAbsolute()", function () {

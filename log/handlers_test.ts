@@ -4,7 +4,7 @@ import {
   assertEquals,
   assertNotEquals,
   assertThrows,
-} from "../assert/mod.ts";
+} from "@std/assert";
 import {
   getLevelByName,
   getLevelName,
@@ -14,7 +14,7 @@ import {
 } from "./levels.ts";
 import { BaseHandler, FileHandler, RotatingFileHandler } from "./handlers.ts";
 import { LogRecord } from "./logger.ts";
-import { existsSync } from "../fs/exists.ts";
+import { existsSync } from "@std/fs/exists";
 
 const LOG_FILE = "./test_log.file";
 

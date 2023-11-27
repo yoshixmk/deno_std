@@ -1,7 +1,7 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
-import { blue, red, yellow } from "../fmt/colors.ts";
-import { walk } from "../fs/walk.ts";
+import { blue, red, yellow } from "@std/fmt/colors";
+import { walk } from "@std/fs/walk";
 import ts from "npm:typescript";
 const {
   createSourceFile,

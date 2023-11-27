@@ -136,16 +136,16 @@
  * @module
  */
 
-import { fromFileUrl } from "../path/from_file_url.ts";
-import { parse } from "../path/parse.ts";
-import { resolve } from "../path/resolve.ts";
-import { toFileUrl } from "../path/to_file_url.ts";
-import { ensureFile, ensureFileSync } from "../fs/ensure_file.ts";
-import { bold, green, red } from "../fmt/colors.ts";
-import { assert } from "../assert/assert.ts";
-import { AssertionError } from "../assert/assertion_error.ts";
-import { equal } from "../assert/equal.ts";
-import { assertEquals } from "../assert/assert_equals.ts";
+import { fromFileUrl } from "@std/path/from_file_url";
+import { parse } from "@std/path/parse";
+import { resolve } from "@std/path/resolve";
+import { toFileUrl } from "@std/path/to_file_url";
+import { ensureFile, ensureFileSync } from "@std/fs/ensure_file";
+import { bold, green, red } from "@std/fmt/colors";
+import { assert } from "@std/assert/assert";
+import { AssertionError } from "@std/assert/assertion_error";
+import { equal } from "@std/assert/equal";
+import { assertEquals } from "@std/assert/assert_equals";
 
 const SNAPSHOT_DIR = "__snapshots__";
 const SNAPSHOT_EXT = "snap";

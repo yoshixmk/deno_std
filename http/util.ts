@@ -2,7 +2,7 @@
 // This module is browser compatible.
 
 import { Status, STATUS_TEXT } from "./status.ts";
-import { deepMerge } from "../collections/deep_merge.ts";
+import { deepMerge } from "@std/collections/deep_merge";
 
 /**
  * @deprecated (will be removed after 0.210.0)

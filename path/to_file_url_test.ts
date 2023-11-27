@@ -1,7 +1,7 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
 import { posix, win32 } from "./mod.ts";
-import { assertEquals, assertThrows } from "../assert/mod.ts";
+import { assertEquals, assertThrows } from "@std/assert";
 
 Deno.test("posix.toFileUrl()", function () {
   assertEquals(posix.toFileUrl("/home/foo").href, "file:///home/foo");

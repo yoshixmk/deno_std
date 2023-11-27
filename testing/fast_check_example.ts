@@ -22,8 +22,8 @@
  */
 
 import fc from "https://cdn.skypack.dev/fast-check@3.10.0";
-import { groupBy } from "../collections/group_by.ts";
-import { assert, assertEquals } from "../assert/mod.ts";
+import { groupBy } from "@std/collections/group_by";
+import { assert, assertEquals } from "@std/assert";
 
 /********************** contains() *************************************/
 const contains = (text: string, pattern: string): boolean =>

@@ -334,4 +334,4 @@ export {
    * Use this to assert unreachable code.
    */
   unreachable,
-} from "../assert/mod.ts";
+} from "@std/assert";

@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
-import { assertEquals } from "../assert/mod.ts";
+import { assertEquals } from "@std/assert";
 import * as url from "./mod.ts";
 
 const TESTSUITE = [
@@ -21,7 +21,7 @@ const TESTSUITE = [
     new URL("https://deno.land/std/assert/"),
   ],
   [
-    new URL("https://deno.land/std/assert/../async/retry.ts/"),
+    new URL("https://deno.land/std/assert/@std/async/retry/"),
     new URL("https://deno.land/std/async/retry.ts/"),
   ],
   [

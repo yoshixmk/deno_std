@@ -5,9 +5,9 @@ import {
   assertEquals,
   assertRejects,
   assertThrows,
-} from "../assert/mod.ts";
-import { FakeTime } from "../testing/time.ts";
-import { KeyStack } from "../crypto/unstable_keystack.ts";
+} from "@std/assert";
+import { FakeTime } from "@std/testing/time";
+import { KeyStack } from "@std/crypto/unstable_keystack";
 
 import {
   CookieMap,

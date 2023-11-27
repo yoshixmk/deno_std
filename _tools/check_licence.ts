@@ -1,6 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import { walk } from "../fs/walk.ts";
-import { globToRegExp } from "../path/glob_to_regexp.ts";
+import { walk } from "@std/fs/walk";
+import { globToRegExp } from "@std/path/glob_to_regexp";
 
 const EXTENSIONS = [".mjs", ".js", ".ts", ".rs"];
 const EXCLUDED_DIRS = [
