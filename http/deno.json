@@ -1,4 +1,24 @@
 {
   "name": "@std/http",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./cookie": "./cookie.ts",
+    "./cookie_map": "./cookie_map.ts",
+    "./etag": "./etag.ts",
+    "./file_server": "./file_server.ts",
+    "./http_status": "./http_status.ts",
+    "./method": "./method.ts",
+    "./negotiation": "./negotiation.ts",
+    "./server": "./server.ts",
+    "./server_sent_event": "./server_sent_event.ts",
+    "./server_sent_event_stream": "./server_sent_event_stream.ts",
+    "./status": "./status.ts",
+    "./test": "./test.ts",
+    "./unstable_cookie_map": "./unstable_cookie_map.ts",
+    "./unstable_method": "./unstable_method.ts",
+    "./unstable_server_sent_event": "./unstable_server_sent_event.ts",
+    "./user_agent": "./user_agent.ts",
+    "./util": "./util.ts"
+  }
 }

@@ -1,4 +1,15 @@
 {
   "name": "@std/datetime",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./constants": "./constants.ts",
+    "./day_of_year": "./day_of_year.ts",
+    "./difference": "./difference.ts",
+    "./format": "./format.ts",
+    "./is_leap": "./is_leap.ts",
+    "./parse": "./parse.ts",
+    "./to_imf": "./to_imf.ts",
+    "./week_of_year": "./week_of_year.ts"
+  }
 }

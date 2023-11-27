@@ -1,4 +1,10 @@
 {
   "name": "@std/log",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./handlers": "./handlers.ts",
+    "./levels": "./levels.ts",
+    "./logger": "./logger.ts"
+  }
 }

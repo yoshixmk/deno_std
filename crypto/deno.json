@@ -1,4 +1,12 @@
 {
   "name": "@std/crypto",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "exports": {
+    ".": "./mod.ts",
+    "./crypto": "./crypto.ts",
+    "./keystack": "./keystack.ts",
+    "./timing_safe_equal": "./timing_safe_equal.ts",
+    "./to_hash_string": "./to_hash_string.ts",
+    "./unstable_keystack": "./unstable_keystack.ts"
+  }
 }
