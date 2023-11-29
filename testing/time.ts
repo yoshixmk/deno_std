@@ -182,13 +182,15 @@ let dueTree: RedBlackTree<DueNode>;
  * controlled through the fake time instance.
  *
  * ```ts
- * // @std/testing/mock_examples/interval_test
  * import {
  *   assertSpyCalls,
  *   spy,
  * } from "@std/testing/mock";
  * import { FakeTime } from "@std/testing/time";
- * import { secondInterval } from "@std/testing/mock_examples/interval";
+ *
+ * function secondInterval(cb: () => void): number {
+ *   return setInterval(cb, 1000);
+ * }
  *
  * Deno.test("secondInterval calls callback every second and stops after being cleared", () => {
  *   const time = new FakeTime();
