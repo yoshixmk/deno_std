@@ -1,11 +1,6 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
 
-import {
-  assert,
-  assertEquals,
-  assertRejects,
-  assertThrows,
-} from "@std/assert";
+import { assert, assertEquals, assertRejects, assertThrows } from "@std/assert";
 import { FakeTime } from "@std/testing/time";
 import { KeyStack } from "@std/crypto/unstable_keystack";
 

@@ -1,9 +1,5 @@
 // Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
-import {
-  assertEquals,
-  assertStrictEquals,
-  assertThrows,
-} from "@std/assert";
+import { assertEquals, assertStrictEquals, assertThrows } from "@std/assert";
 import { afterEach, beforeEach, describe, it } from "../bdd.ts";
 import { User } from "./user.ts";
 
