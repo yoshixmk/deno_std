@@ -1,3 +1,5 @@
+// Copyright 2018-2023 the Deno authors. All rights reserved. MIT license.
+
 const exports: [string, string][] = [];
 
 const folder = Deno.args[0];
@@ -7,7 +9,9 @@ for (let i = 0; i < folders.length; i++) {
   for await (const entry of Deno.readDir(folders[i])) {
     if (
       entry.name.startsWith(".") || entry.name.startsWith("_") ||
-      entry.name.endsWith("_test.ts") || entry.name.endsWith(".json") ||
+      entry.name.endsWith("_test.ts") || entry.name.endsWith("_example.ts") ||
+      entry.name.endsWith("_examples") ||
+      entry.name.endsWith(".json") ||
       entry.name === "test.ts" || entry.name.endsWith(".md")
     ) continue;
     let name = entry.name.replace(".ts", "");

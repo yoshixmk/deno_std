@@ -4,15 +4,7 @@
   "exports": {
     "./asserts": "./asserts.ts",
     "./bdd": "./bdd.ts",
-    "./bdd_examples/user": "./bdd_examples/user.ts",
-    "./chai_example": "./chai_example.ts",
-    "./fast_check_example": "./fast_check_example.ts",
     "./mock": "./mock.ts",
-    "./mock_examples/internals_injection": "./mock_examples/internals_injection.ts",
-    "./mock_examples/interval": "./mock_examples/interval.ts",
-    "./mock_examples/parameter_injection": "./mock_examples/parameter_injection.ts",
-    "./mock_examples/random": "./mock_examples/random.ts",
-    "./sinon_example": "./sinon_example.ts",
     "./snapshot": "./snapshot.ts",
     "./time": "./time.ts",
     "./types": "./types.ts"
