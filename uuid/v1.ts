@@ -7,11 +7,20 @@ const UUID_RE =
   /^[0-9a-f]{8}-[0-9a-f]{4}-1[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 
 /**
- * Validates the UUID v1.
- * @param id UUID value.
+ * Returns whether the given value is a valid
+ * [RFC 4122]{@link https://datatracker.ietf.org/doc/html/rfc4122} v1 UUID.
+ *
+ * @param uuid UUID value
+ *
+ * @example
+ * ```ts
+ * import { validate } from "https://deno.land/std@$STD_VERSION/uuid/v1.ts";
+ *
+ * validate("63655efa-7ee6-11ea-bc55-0242ac130003"); // true
+ * ```
  */
-export function validate(id: string): boolean {
-  return UUID_RE.test(id);
+export function validate(value: string): boolean {
+  return UUID_RE.test(value);
 }
 
 let _nodeId: number[];
@@ -20,7 +29,7 @@ let _clockseq: number;
 let _lastMSecs = 0;
 let _lastNSecs = 0;
 
-/** The options used for generating a v1 UUID. */
+/** Options for {@linkcode generate}. */
 export interface V1Options {
   node?: number[];
   clockseq?: number;
@@ -31,7 +40,8 @@ export interface V1Options {
 }
 
 /**
- * Generates a RFC4122 v1 UUID (time-based).
+ * Generates an [RFC 4122]{@link https://datatracker.ietf.org/doc/html/rfc4122} v1 UUID.
+ *
  * @param options Can use RFC time sequence values as overwrites.
  * @param buf Can allow the UUID to be written in byte-form starting at the offset.
  * @param offset Index to start writing on the UUID bytes in buffer.
