@@ -12,10 +12,8 @@ import { VERSION } from "../version.ts";
 
 const cwd = await Deno.realPath(".");
 
-await Deno.rename("./types.d.ts", "./io/types.d.ts");
+await Deno.remove("./types.d.ts");
 await Deno.remove("./version.ts");
-await Deno.remove("./http/testdata/test file.txt");
-await Deno.remove("./jsonc/testdata/JSONTestSuite/test_parsing/n_structure_trailing_#.json");
 
 const toRemove = `1. Do not import symbols with an underscore in the name.
 
@@ -61,13 +59,6 @@ fileServerTest = fileServerTest.replace(
 );
 fileServerTest = fileServerTest.replaceAll("${VERSION}", "${version}");
 await Deno.writeTextFile("http/file_server_test.ts", fileServerTest);
-
-let matchers = await Deno.readTextFile("expect/_matchers.ts");
-matchers = matchers.replace(
-  `import { format } from "../assert/_format.ts";`,
-  "function format(_: any) { throw 'https://github.com/denoland/deno_std/issues/3880' }",
-);
-await Deno.writeTextFile("expect/_matchers.ts", matchers);
 
 const packages = [];
 for await (const entry of Deno.readDir(".")) {
@@ -137,16 +128,14 @@ for (const { specifier, dependencies } of graph.modules) {
   for (const dep of dependencies ?? []) {
     if (dep.code) {
       const to = relative(cwd, fromFileUrl(dep.code.specifier));
-      let toPkg = to.split("/")[0];
-      if (toPkg === "types.d.ts") toPkg = "io";
+      const toPkg = to.split("/")[0];
       if (fromPkg !== toPkg) {
         pkgDeps.get(fromPkg)!.add(toPkg);
       }
     }
     if (dep.types) {
       const to = relative(cwd, fromFileUrl(dep.types.specifier));
-      let toPkg = to.split("/")[0];
-      if (toPkg === "types.d.ts") toPkg = "io";
+      const toPkg = to.split("/")[0];
       if (fromPkg !== toPkg) {
         pkgDeps.get(fromPkg)!.add(toPkg);
       }
@@ -183,7 +172,6 @@ for (const pkg of packages) {
 // ```
 // Also replace all absolute https://deno.land/std@$STD_VERSION/ imports with absolute jsr
 // imports.
-// Also replace all imports to `types.d.ts` with `io/types.d.ts` (or rather @std/io/types).
 for await (const entry of walk(cwd)) {
   if (!entry.isFile) continue;
   if (entry.path.includes("/_tools")) continue; // ignore tools
@@ -214,10 +202,7 @@ for await (const entry of walk(cwd)) {
   for (const specifier of relativeImports) {
     const targetUrl = new URL(specifier, currentUrl);
     const path = fromFileUrl(targetUrl);
-    let target = relative(cwd, path);
-    if (target === "types.d.ts") {
-      target = "io/types.d.ts";
-    }
+    const target = relative(cwd, path);
     const pkg = target.split("/")[0];
     if (pkg === currentPkg) {
       let newSpecifier = relative(dirname(entry.path), target);
