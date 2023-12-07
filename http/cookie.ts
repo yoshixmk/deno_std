@@ -186,6 +186,18 @@ function validateDomain(domain: string) {
   }
 }
 
+function getCookies2(headers: Headers): Map<string, string> | null {
+  const header = headers.get("Cookie");
+  if (header === null) return null;
+  const iterable = header
+    .split(";")
+    .map((kv) => {
+      const [key, value] = kv.split("=").map((s) => s.trim());
+      return [key, value] as Readonly<[string, string]>;
+    });
+  return new Map<string, string>(iterable);
+}
+
 /**
  * Parse cookies of a header
  *
